@@ -1,0 +1,311 @@
+/*GOOGLE FONTS = *poppins regular400, medium500, semibold600*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap");
+
+@media screen and (max-width: 767px) {
+  .barMenu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: hsl(250, 60%, 99%);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5rem 5rem 0 0;
+    transition: 0.3s;
+  }
+}
+
+/*BASE*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 3rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: hsl(250, 60%, 99%);
+  color: hsl(250, 8%, 45%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(250, 8%, 15%);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*REUSABLE CSS CLASSES*/
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: 1.5rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: 0.813rem;
+  margin-bottom: 3rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/*LAYOUT*/
+.container {
+  max-width: 768px;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: hsl(250, 60%, 99%);
+}
+
+/*BUTTON*/
+.tombol {
+  display: flex;
+  align-items: center;
+}
+.button {
+  display: inline-block;
+  background-color: hsl(250, 69%, 61%);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: hsl(250, 57%, 53%);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+  transition: 0.3s;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/*UTILITAS*/
+.tampilkan {
+  bottom: 0;
+}
+
+/*NAV*/
+.nav {
+  max-width: 968px;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo,
+.barApp,
+.tutupBar {
+  color: hsl(250, 8%, 15%);
+  font-weight: 500;
+}
+
+.logo:hover {
+  color: hsl(250, 69%, 61%);
+}
+
+.barApp {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.barApp:hover {
+  color: hsl(250, 69%, 61%);
+}
+
+.butirMenu {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.813rem;
+  color: hsl(250, 8%, 15%);
+  font-weight: 500;
+}
+
+.keberadaan {
+  color: hsl(250, 69%, 61%);
+}
+
+.link:hover {
+  color: hsl(250, 69%, 61%);
+}
+
+.logoButir {
+  font-size: 1.2rem;
+}
+
+.tutupBar {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: hsl(250, 8%, 15%);
+}
+
+.tutupBar:hover {
+  color: rgb(219, 68, 68);
+}
+/*HOME*/
+.home__container {
+  gap: 1rem;
+}
+
+.home__content {
+  grid-template-columns: 0.5fr 3fr;
+  padding-top: 0.1rem;
+  align-items: center;
+}
+
+.home__social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.home__social-icon {
+  font-size: 1.25rem;
+  color: white;
+  pointer-events: none;
+}
+
+.home__img {
+  width: 250px;
+}
+
+.home__data {
+  grid-column: 1/3;
+}
+
+.home__title {
+  font-size: 2rem;
+}
+
+.home__subtitle {
+  font-size: 1.125rem;
+  color: hsl(250, 8%, 45%);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.home__description {
+  margin-bottom: 2rem;
+}
+
+.home__scroll {
+  display: none;
+}
+
+.home__scroll-button {
+  color: hsl(250, 69%, 61%);
+  transition: 0.3s;
+}
+
+.home__scroll-button:hover {
+  transform: translateY(0.25rem);
+}
+
+.home__scroll-mouse {
+  font-size: 2rem;
+}
+
+.home__scroll-name {
+  font-size: 0.813rem;
+  color: hsl(250, 8%, 15%);
+  font-weight: 500;
+  margin-right: 0.25rem;
+}
+
+.home__scroll-arrow {
+  font-size: 1.25rem;
+}
+/*ABOUT*/
+.about__img {
+  width: 200px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.about__info-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(250, 8%, 15%);
+}
+
+.about__info-name {
+  font-size: 0.75rem;
+}
+
+.about__info-title,
+.about__info-name {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
+}
